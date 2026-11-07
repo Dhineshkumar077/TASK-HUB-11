@@ -1,4 +1,5 @@
-import { Router, Response } from 'express';
+import { Router } from 'express';
+import type { Response } from 'express';
 import crypto from 'crypto';
 import { db } from '../db.ts';
 import { authMiddleware, requireRole } from '../middleware.ts';

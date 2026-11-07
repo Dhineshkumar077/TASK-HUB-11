@@ -1,4 +1,5 @@
-import express, { type Response } from 'express';
+import express from 'express';
+import type { Response } from 'express';
 import crypto from 'crypto';
 import { db } from '../db.ts';
 import { sendOTP, verifyOTP } from '../otp.ts';
