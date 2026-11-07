@@ -1,0 +1,7 @@
+{
+  "name": "TaskHub",
+  "description": "Unified platform combining Micro-Gig Economy Platform and Collective Local Service Marketplace with four dedicated portals and Master Admin Control Panel.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

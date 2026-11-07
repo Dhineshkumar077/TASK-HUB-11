@@ -1,0 +1,22 @@
+{
+  "users": [],
+  "sessions": [],
+  "gigs": [],
+  "gigApplications": [],
+  "gigAttendance": [],
+  "services": [],
+  "serviceBookings": [],
+  "financialLedger": [],
+  "wallets": [],
+  "withdrawals": [],
+  "disputes": [],
+  "announcements": [],
+  "notifications": [],
+  "reviews": [],
+  "platformSettings": {
+    "microGigTier1MaxMembers": 5,
+    "microGigTier1FeePercentage": 10,
+    "microGigTier2FeePercentage": 5,
+    "localServiceCommissionPercentage": 10
+  }
+}

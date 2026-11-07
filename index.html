@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskHub — Micro-Gig Economy & Local Service Marketplace</title>
+    <meta name="description" content="Unified platform combining Micro-Gig Economy Platform and Collective Local Service Marketplace with four dedicated portals and Master Admin Control Panel." />
+    <meta property="og:title" content="TaskHub — Micro-Gig Economy & Local Service Marketplace" />
+    <meta property="og:description" content="Unified platform combining Micro-Gig Economy Platform and Collective Local Service Marketplace with four dedicated portals and Master Admin Control Panel." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      // Cleanly handle Vite HMR WebSocket connection rejections in preview / iframe environments
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event && event.reason;
+        var msg = (reason && reason.message) ? reason.message : String(reason || '');
+        if (
+          msg.indexOf('WebSocket') !== -1 ||
+          msg.indexOf('websocket') !== -1 ||
+          msg.indexOf('failed to connect to websocket') !== -1
+        ) {
+          event.preventDefault();
+        }
+      });
+      var _origConsoleError = console.error;
+      console.error = function() {
+        var msg = Array.prototype.slice.call(arguments).map(String).join(' ');
+        if (
+          msg.indexOf('[vite] failed to connect to websocket') !== -1 ||
+          msg.indexOf('WebSocket closed without opened') !== -1
+        ) {
+          return;
+        }
+        _origConsoleError.apply(console, arguments);
+      };
+      var _origConsoleWarn = console.warn;
+      console.warn = function() {
+        var msg = Array.prototype.slice.call(arguments).map(String).join(' ');
+        if (
+          (msg.indexOf('[vite]') !== -1 && msg.indexOf('websocket') !== -1) ||
+          msg.indexOf('Service worker registration failed') !== -1
+        ) {
+          return;
+        }
+        _origConsoleWarn.apply(console, arguments);
+      };
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
